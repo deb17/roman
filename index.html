@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roman numerals</title>
+    <link rel="icon" href="./img/icon.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="text/javascript" src="js/brython.js"></script>
+    <script type="text/javascript" src="js/brython_modules.js"></script>
+  </head>
+  <body onload="brython()">
+    <div id="container">
+      <h1>Roman to decimal converter</h1>
+      <input type="text" id="decimal" placeholder="Decimal" />
+      <div id="error-decimal"></div>
+      <img src="./img/arrow.svg" alt="arrow" />
+      <br />
+      <input type="text" id="roman" placeholder="Roman" />
+      <div id="error-roman"></div>
+    </div>
+    <script type="text/python" src="roman.py"></script>
+  </body>
+</html>
