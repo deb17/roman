@@ -6,13 +6,14 @@ err_roman = document.select('#error-roman')[0]
 err_decimal = document.select('#error-decimal')[0]
 
 map = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
-exceptions = {'CD': 'no', 'CM': 'no',
+EXCEPTIONS = {'CD': 'no', 'CM': 'no',
               'XL': 'no', 'XC': 'no',
               'IV': 'no', 'IX': 'no'}
 
 
 def roman_to_decimal(r):
 
+    exceptions = dict(EXCEPTIONS)
     d = 0
     prev = ''
 
